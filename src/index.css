@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  padding: 20px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+label {
+  display: grid;
+  margin-bottom: 12px;
+  font-weight: 500;
+  color: #111;
+  font-size: 24px;
+}
+
+input {
+  margin: 0px;
+  border-radius: 6px;
+  padding: 20px;
+  width: 92%;
+
+  border: 1px solid #ededed;
+
+  background: #ededed;
+
+  font-size: 1rem;
+}
+
+input:focus {
+  border-color: #ffbb00 !important;
+}
+
+.cardExercicio {
+  background: #404040;
+  padding: 20px;
+  border-radius: 6px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.enunciadoExercicio {
+  font-size: 20px;
+  font-weight: 500;
+  max-width: 60ch;
+  line-height: calc(24 / 16);
+  color: #f7f7f7;
+}
+
+.containerExercicio {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+}
+
+.resolucaoExercicio {
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.centralizar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.inputTextoPadrao {
+  box-sizing: border-box;
+  border: 0;
+  width: 100%;
+}
+
+.botaoPadrao {
+  padding: 6px 12px;
+  margin-top: 40px;
+  border-radius: 6px;
+  justify-content: center;
+  cursor: pointer;
+
+  background: var(
+    --gradiente,
+    linear-gradient(180deg, #ffbf00 0%, #f2a50c 100%)
+  );
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.TextoBotaoPadrao {
+  color: #332200;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .containerExercicio {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .centralizar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .resolucaoExercicio {
+    width: 92%;
+  }
+}

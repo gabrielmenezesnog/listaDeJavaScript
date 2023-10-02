@@ -1,0 +1,43 @@
+.container {
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0px 20px;
+  max-width: 1200px;
+}
+
+body {
+  height: max-content;
+}
+
+.dica {
+  font-size: 16px;
+  color: #595959;
+  margin-bottom: 20px;
+}
+
+.dicaErro {
+  font-size: 16px;
+  color: #d80032;
+  margin-bottom: 20px;
+}
+
+.inputErro {
+  margin: 0px;
+  border-radius: 6px;
+  padding: 20px;
+  width: 92%;
+
+  border: 3px solid #d80032;
+
+  background: #ededed;
+
+  font-size: 1rem;
+}
+
+.resposta {
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  font-size: 20px;
+  font-weight: 500;
+}

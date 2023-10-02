@@ -1,0 +1,14 @@
+.logo {
+  color: #ffbb00;
+  font-size: 40px;
+  margin: 0;
+
+  width: fit-content;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .logo {
+    margin-bottom: 20px;
+  }
+}

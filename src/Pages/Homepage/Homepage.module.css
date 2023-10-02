@@ -1,0 +1,47 @@
+body {
+  background: #111;
+}
+
+.container {
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0px 20px;
+  max-width: 1200px;
+}
+
+.apresentacao {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+
+  align-items: center;
+  justify-items: center;
+}
+
+.textoApresentacao {
+  color: #f7f7f7;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: calc(20px * 1.5);
+  max-width: 80ch;
+  margin-top: 40px;
+}
+
+.containerLogo {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.rotate {
+  animation: rotate 10s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); /* Ângulo inicial de rotação */
+  }
+  to {
+    transform: rotate(360deg); /* Ângulo final de rotação */
+  }
+}
